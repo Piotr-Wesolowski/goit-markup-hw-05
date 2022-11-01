@@ -94,17 +94,6 @@ body {
   align-items: center;
 }
 
-.active::after {
-  content: "";
-  height: 4px;
-  display: block;
-  width: 100%;
-  background-color: var(--main-blue);
-  border-radius: 2px;
-  position: relative;
-  top: 24px;
-}
-
 .web-studio-logo-web {
   font-family: "Raleway";
   font-style: normal;
@@ -113,6 +102,8 @@ body {
   line-height: 31px;
   letter-spacing: 0.003em;
   color: var(--main-blue);
+ 
+
 }
 
 .web-studio-logo-studio {
@@ -123,6 +114,8 @@ body {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--second-black);
+ 
+  
 }
 
 .web-studio-logo:hover,
@@ -155,9 +148,30 @@ body {
   color: var(--main-black);
 }
 
+.agency-active {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-blue);
+}
+
 .agency:hover,
 .agency:focus {
   color: var(--main-blue);
+}
+
+.agency-active::after {
+  content: "";
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: var(--main-blue);
+  border-radius: 2px;
+  position: relative;
+  top: 31px;
 }
 
 .portfolio {
