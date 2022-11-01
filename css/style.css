@@ -83,9 +83,26 @@ body {
 }
 
 .web-studio-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.01em;
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+
+.active::after {
+  content: "";
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: var(--main-blue);
+  border-radius: 2px;
+  position: relative;
+  top: 24px;
 }
 
 .web-studio-logo-web {
@@ -153,24 +170,43 @@ body {
   color: var(--main-black);
 }
 
-/* .portfolio::after {
-  content: "underline";
-  background: #2196f3;
+.portfolio-active {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-blue);
+}
+
+.portfolio-active::after {
+  content: "";
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: var(--main-blue);
   border-radius: 2px;
-} */
+  position: relative;
+  top: 31px;
+}
 
 .portfolio:hover,
 .portfolio:focus {
   color: var(--main-blue);
 }
 
-.portfolio::after {
+/* .header-border .portfolio::after {
   content: "";
   background-image: url(../images/hover.jpg);
-  width: 58px;
-  height: 4px;
+  background-position: bottom;
+  
+  margin-top: 10px;
+  padding-top: 50px;
+    width: 58px;
+    height: 4px;
   position: relative;
-}
+} */
 
 .contact {
   display: flex;
