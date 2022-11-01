@@ -18,6 +18,19 @@
   padding: 0;
 }
 
+/* animacja wzór {
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+  transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+
+a dla ahover
+
+transform: scale(1.5);
+
+} */
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-black);
@@ -101,6 +114,11 @@ body {
   color: var(--main-blue);
 }
 
+.web-studio-logo::after {
+  text-decoration: underline;
+  color: var(--main-blue);
+}
+
 .first-list {
   display: flex;
   gap: 46px;
@@ -135,9 +153,23 @@ body {
   color: var(--main-black);
 }
 
+/* .portfolio::after {
+  content: "underline";
+  background: #2196f3;
+  border-radius: 2px;
+} */
+
 .portfolio:hover,
 .portfolio:focus {
   color: var(--main-blue);
+}
+
+.portfolio::after {
+  content: "";
+  background-image: url(../images/hover.jpg);
+  width: 58px;
+  height: 4px;
+  position: relative;
 }
 
 .contact {
@@ -371,7 +403,7 @@ linkedin:focus {
   --color5: var(--main-blue);
   --color3: var(--main-white);
   cursor: pointer;
-  }
+}
 
 .list-fifth-pic-name {
   padding-top: 30px;
@@ -395,7 +427,7 @@ linkedin:focus {
 
 .our-customers {
   height: 184px;
-  }
+}
 
 .our-customers-list {
   list-style-type: none;
@@ -408,19 +440,19 @@ linkedin:focus {
   list-style: none;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
- .customer-hover:hover,
- .customer-hover:focus {
+.customer-hover:hover,
+.customer-hover:focus {
   border: 1px solid var(--main-blue);
   cursor: pointer;
   --color3: var(--main-blue);
- }
+}
 
 .web-studio-logo-studio-bottom {
   font-family: "Raleway";
@@ -523,8 +555,7 @@ linkedin:focus {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-  
- }
+}
 
 .social-position-icons-footer {
   /* /width: 206px;
@@ -532,25 +563,24 @@ linkedin:focus {
   list-style: none; */
   padding-left: 70px;
   /* justify-content: space-between; */
- }
+}
 
 .wrapper {
   display: flex;
-  
-  }
+}
 
-  .section-right {
-    padding-left: 32px;
-    }
+.section-right {
+  padding-left: 32px;
+}
 
-  .social-footer-list {
-    width: 206px;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    --color5: var(--icon-footer-grey);
-    --color3: var(--main-white);
-  }
+.social-footer-list {
+  width: 206px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  --color5: var(--icon-footer-grey);
+  --color3: var(--main-white);
+}
 
 .portfolio-filter {
   display: none;
@@ -670,7 +700,8 @@ linkedin:focus {
 
 .portfolio-list-pics li:hover,
 .portfolio-list-pic li:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
