@@ -496,6 +496,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .our-customers li {
@@ -507,13 +508,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+
+.customer-hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--icon-grey);
+  
+
 }
 
 .customer-hover:hover,
 .customer-hover:focus {
   border: 1px solid var(--main-blue);
-  cursor: pointer;
-  --color3: var(--main-blue);
+  fill: var(--main-blue);
 }
 
 .web-studio-logo-studio-bottom {
