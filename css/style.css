@@ -861,21 +861,19 @@ color: var(--main-white);
   list-style: none;
 }
 
-
-
 .portfolio-box {
 position: relative;
-  width: 370px;
-  height: 294px;
-  margin-bottom: 0;
-   background-color: #bdbdbd;
-    overflow: hidden;
+width: 370px;
+height: 294px;
+margin-bottom: 0;
+background-color: #bdbdbd;
+overflow: hidden;
 }
 
-.portfolio-box:hover .portfolio-overlay {
+.text-hover:hover .portfolio-overlay {
   transform: translatey(0%);
-  
 }
+
 
 .portfolio-overlay {
   position: absolute;
@@ -905,6 +903,8 @@ color: var(--main-white);
   text-align: center;
 
 }
+
+
 
 
 /* .is-hidden {
