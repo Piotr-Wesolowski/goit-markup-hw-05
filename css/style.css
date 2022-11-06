@@ -9,6 +9,7 @@
   --border-grey: #ececec;
   --second-border-grey: #eeeeee;
   --icon-footer-grey: rgba(255, 255, 255, 0.1);
+  --icon-grey: #AFB1B8;
 }
 
 *,
@@ -233,7 +234,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--main-silver);
-  --color4: currentColor;
+  --color3: currentColor;
 }
 
 .mail-top:hover,
@@ -249,7 +250,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--main-silver);
-  --color4: currentColor;
+  --color3: currentColor;
 }
 
 .phone-top:hover,
@@ -429,11 +430,27 @@ body {
   
 }
 
-.instagram .svg {
-  transition-duration: 2500ms;
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  fill: var(--icon-grey);
+  background-color: var(--main-white);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --color5: currentColor;
-  --color3: currentColor;
   
 }
 
@@ -445,8 +462,8 @@ body {
 .twitter:focus,
 .facebook:focus,
 .linkedin:focus {
-  --color5: var(--main-blue);
-  --color3: var(--main-white);
+  background-color: var(--main-blue);
+  fill: var(--main-white);
   cursor: pointer;
 }
 
