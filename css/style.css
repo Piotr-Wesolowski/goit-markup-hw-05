@@ -234,11 +234,12 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--main-silver);
-  --color3: currentColor;
+  
 }
 
 .mail-top:hover,
 .mail-top:focus {
+  fill: var(--main-blue);
   color: var(--main-blue);
 }
 
@@ -256,6 +257,7 @@ body {
 .phone-top:hover,
 .phone-top:focus {
   color: var(--main-blue);
+  fill: var(--main-blue);
 }
 
 .mail-phone-transformation {
@@ -651,6 +653,43 @@ body {
   justify-content: space-between;
   --color5: var(--icon-footer-grey);
   --color3: var(--main-white);
+}
+
+.instagram-footer,
+.twitter-footer,
+.facebook-footer,
+.linkedin-footer {
+  fill: var(--main-white);
+  background-color: var(--icon-footer-grey);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.instagram-footer,
+.twitter-footer,
+.facebook-footer,
+.linkedin-footer {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.instagram-footer:hover,
+.twitter-footer:hover,
+.facebook-footer:hover,
+.linkedin-footer:hover,
+.instagram-footer:focus,
+.twitter-footer:focus,
+.facebook-footer:focus,
+.linkedin-footer:focus {
+  background-color: var(--main-blue);
+  fill: var(--main-white);
+  cursor: pointer;
 }
 
 .portfolio-filter {
