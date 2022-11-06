@@ -386,6 +386,8 @@ body {
   padding-bottom: 50px;
 }
 
+
+
 .fourth-unit {
   background: var(--second-white);
   height: 708px;
@@ -398,6 +400,39 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  position: relative;
+}
+
+.fourth-list img {
+  display: block;
+  position: relative;
+  
+}
+
+/* .shadow-parent {
+  position: relative;
+  
+} */
+
+.shadow {
+position: absolute;
+display: block;
+bottom: 0;
+width: 370px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+background: rgba(47, 48, 58, 0.8);
+color: var(--main-white);
 }
 
 .our-team {
@@ -830,3 +865,69 @@ body {
   border-top: none;
   list-style: none;
 }
+
+/* .is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  scale: 0;
+}
+
+.backdrop {
+  position: relative;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: var(--backdrop);
+  scale: 1;
+  transition-property: scale;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+.box {
+  position: absolute;
+  height: 582px;
+  width: 528px;
+  background-color: var(--main-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+ .btn-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  background-color: var(--main-white);
+  border-color: var(--btn-border);
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.decoration-overlay {
+  position: absolute;
+  background-color: var(--overlay-blue);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  padding-top: 49px;
+  padding-left: 24px;
+  padding-right: 45px;
+} */
