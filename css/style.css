@@ -909,26 +909,25 @@ color: var(--main-white);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  /* scale: 0; */
+  scale: 0;
 }
 
 .backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
   background: rgba(0, 0, 0, 0.2);
-  width: 100%;
+  width: 1600px;
   height: 1024px;
-  /* scale: 1; */
-  /* transition-property: scale;
+  /* scale: 1;
+  transition-property: scale;
   transition-duration: 2s;
   transition-timing-function: ease; */
 }
 
 .modal {
   position: absolute;
-  top: 221px;
-  left: 536px;
+  top: 50%;
+  left: 50%;
   height: 581px;
   width: 528px;
   background-color: var(--main-white);
