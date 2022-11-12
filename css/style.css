@@ -910,7 +910,7 @@ color: var(--main-white);
   visibility: hidden;
   pointer-events: none;
   transform: scale(0);
-  /* transform: translateX(-100%); */
+  
 }
 
 .backdrop {
@@ -939,7 +939,7 @@ color: var(--main-white);
 
  .close-btn {
   position: relative;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   top: 8px;
@@ -947,10 +947,12 @@ color: var(--main-white);
   width: 30px;
   height: 30px;
   background-color: var(--main-white);
+  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  cursor: pointer;
+  
 }
 
-
-
+.modal-close-btn-icon {
+  
+}
