@@ -929,6 +929,7 @@ color: var(--main-white);
 }
 
 .modal {
+  position: relative;
   height: 581px;
   width: 528px;
   background-color: var(--main-white);
@@ -938,8 +939,8 @@ color: var(--main-white);
 }
 
  .close-btn {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  display: flex;
   justify-content: center;
   align-items: center;
   top: 8px;
@@ -951,17 +952,9 @@ color: var(--main-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   
+  
 }
 
-/* .modal-close-btn-icon {
-  
-    
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  
-
-  
-} */
+.modal-close-btn-icon {
+ 
+}
