@@ -953,6 +953,15 @@ color: var(--main-white);
   
 }
 
-.modal-close-btn-icon {
+/* .modal-close-btn-icon {
   
-}
+    
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  
+
+  
+} */
