@@ -226,6 +226,8 @@ body {
   align-items: center;
 }
 
+
+
 .mail-top {
   fill: var(--main-silver);
   text-decoration: none;
@@ -451,7 +453,7 @@ color: var(--main-white);
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .fifth-list li {
@@ -527,6 +529,8 @@ color: var(--main-white);
 }
 
 .our-customers {
+  margin-top: 94px;
+  margin-bottom: 94px;
   height: 184px;
 }
 
